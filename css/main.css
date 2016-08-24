@@ -1,0 +1,191 @@
+/*
+	Index page
+*/
+body {
+  width: 95%;
+  margin: 0 auto;
+  font-family: 'Source Code Pro', Helvetica, sans-serif;
+  font-size: 17px;
+  color: #000000;
+}
+@media (min-width: 1500px) {
+  body {
+    font-size: 30px;
+  }
+}
+body a {
+  text-decoration: none;
+  color: #0000FF;
+}
+body a:hover {
+  text-decoration: underline;
+}
+body header {
+  font-family: 'Roboto';
+  font-size: 1em;
+  background-color: #FFFFFF;
+  border-bottom: 1px dashed #000000;
+  position: fixed;
+  width: 95%;
+  height: auto;
+  top: 0;
+  padding-bottom: 1em;
+  z-index: 2;
+}
+body header section#image {
+  width: 110px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0.5em 0 0.5em 0;
+}
+body header section#image img {
+  width: 100%;
+  border-radius: 50%;
+}
+body header section#text {
+  width: 100%;
+  text-align: center;
+}
+body header section#text h1 {
+  margin: 0;
+  padding: 0.5em 0 0.2em 0;
+}
+body header section#text p {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  padding: 0.2em 0 0.2em 0;
+}
+body header section#text p strong {
+  font-size: 2em;
+}
+body header section#text p.mobile {
+  display: none;
+}
+body header section#github {
+  width: 110px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.5em 0 0.5em 0;
+}
+body header section#github img {
+  width: 100%;
+}
+body header:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+body main {
+  margin-top: 150px;
+}
+@media (max-width: 1300px) {
+  body main {
+    margin-top: 200px;
+  }
+}
+body main p {
+  text-align: justify;
+}
+body main section#album {
+  margin-top: 30px;
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
+}
+body main section#album div.preview {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+body main section#album div.preview p {
+  padding-bottom: 2em;
+  text-align: center;
+  font-size: 0.8em;
+}
+body main section#album div.preview p.blowup {
+  display: none;
+}
+body main section#album div.preview img {
+  width: 100%;
+  padding-bottom: 5%;
+}
+body main section#album div.preview span.hover-image {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+body main section#album div.previewed {
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 3;
+}
+body main section#album div.previewed img {
+  width: auto;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body main section#album div.previewed p {
+  position: absolute;
+  bottom: 2em;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: #FFFFFF;
+}
+body main section#album div.previewed p.blowup {
+  bottom: 0;
+}
+@media (max-width: 1300px) {
+  body main section#album {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+@media (max-width: 800px) {
+  body main section#album {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+}
+@media (max-width: 800px) {
+  body {
+    font-size: 15px;
+  }
+  body header {
+    position: static;
+  }
+  body header section#image {
+    display: none;
+  }
+  body header section#text h1 {
+    padding-bottom: 0.5em;
+  }
+  body header section#text p {
+    width: 100%;
+  }
+  body header section#text p.mobile {
+    display: block;
+  }
+  body header section#github {
+    display: none;
+  }
+  body main {
+    margin-top: 50px;
+  }
+  body main section#album div.previewed img {
+    width: 70%;
+    height: auto;
+  }
+}
